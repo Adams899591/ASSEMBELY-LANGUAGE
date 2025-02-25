@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typed.js</title>
+    <link rel="stylesheet" href="index.css">
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script> -->
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- <h1 >hello <span id="mytext"></span></h1> -->
+    <h1 >welcome <span class="text"></span></h1>
+    <h1 >hello <span style="color: blue;" class="text"></span></h1>
+         
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h1 data-aos="zoom-in-up"> departement of computing </h1>
+
+        <div data-aos="fade-right" data-aos-delay="1000" data-aos-duration="7000" class="box-1">
+            <h1 > BOX 1</h1>
+        </div>
+
+        <div data-aos="fade-left" class="box-2">
+            <h1 ></h1> BOX 2</h1>
+        </div>
+        <div data-aos="fade-left" class="box-2">
+            <img src="image/good.png" alt="image" height="10%" width="10%">
+        </div>
+
+        <div data-aos="zoom-in" class="box-3">
+            <h1 > BOX 3</h1>
+        </div>
+
+        <div data-aos="fade-right" class="box-4">
+            <h1 > BOX 4</h1>
+        </div>
+        
+        <div data-aos="fade-left" class="box-4">
+            <h1 > BOX 5</h1>
+        </div>
+
+        
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<script>
+
+document.querySelectorAll(".text").forEach(element => {
+    var  typed = new Typed( element , {
+        strings : ["Web developer", "Cyber security", "Meachine learning"],
+        typeSpeed: 50,
+        backSpeed: 30,
+        loop : true
+    });
+        
+    });
+     
+
+  </script>
+
+<!-- 
+var  typed = new Typed( ".text", {
+    strings : ["Web developer", "Cyber security", "Meachine learning"],
+    typeSpeed: 50,
+    backSpeed: 30,
+    loop : true
+}); -->
+
+

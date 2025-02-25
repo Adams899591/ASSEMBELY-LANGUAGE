@@ -1,0 +1,41 @@
+/* .container{
+    padding: 5%;
+    border-style: double;
+} */
+.box-1{
+    padding: 5%;
+    border-style: double; 
+    width: 50%;
+    /* margin-left: 70%; */
+    /* text-align: center; */
+    margin-top: 0%;
+    color: red;
+}
+.box-2{
+    padding: 5%;
+    border-style: double; 
+    width: 50%;
+    /* margin-left: 40%; */
+    /* text-align: center; */
+    margin-top: 3%;
+    background-color: blue;
+}
+.box-3{
+    padding: 5%;
+    border-style: double; 
+    width: 50%;
+    /* margin-left: 10%; */
+    /* text-align: center; */
+    margin-top: 3%;
+    color: white;
+    background-color: tomato;
+}
+.box-4{
+    padding: 5%;
+    border-style: double; 
+    width: 50%;
+    /* margin-left: 50%; */
+    /* text-align: center; */
+    margin-top: 3%;
+    color: green;
+}
