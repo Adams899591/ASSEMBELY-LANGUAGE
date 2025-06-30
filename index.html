@@ -87,3 +87,378 @@ var  typed = new Typed( ".text", {
 }); -->
 
 
+
+<-------_------------My navbar--------------------------->
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Navbar with Full-Width Mobile Highlight</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .navbar {
+      background-color: #fff !important;
+      box-shadow: 0 5px 20px rgba(0, 123, 255, 0.5);
+      z-index: 1040;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #000 !important;
+    }
+
+    .nav-link {
+      color: #000 !important;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: #0d6efd !important;
+    }
+
+    .offcanvas-start {
+      background-color: #ffffff;
+      box-shadow: 5px 0 20px rgba(0, 123, 255, 0.4);
+      width: 80%;
+      max-width: 250px;
+      border-right: 1px solid #dee2e6;
+    }
+
+    /* Full-row hover/tap effect on mobile menu */
+    .offcanvas .nav-link {
+      display: block;
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border-radius: 0.375rem;
+      transition: background-color 0.2s;
+    }
+
+    .offcanvas .nav-link:hover,
+    .offcanvas .nav-link:focus,
+    .offcanvas .nav-link:active {
+      background-color: rgba(0, 123, 255, 0.12); /* full-width blue shade */
+      color: #0d6efd !important;
+    }
+
+    .btn-close {
+      filter: invert(1);
+    }
+
+    .dropdown-menu {
+      background-color: #ffffff;
+    }
+
+    .dropdown-item:active {
+      background-color: rgba(0, 123, 255, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      .offcanvas-header {
+        border-bottom: 1px solid #dee2e6;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand" href="#">MyShop</a>
+
+    <!-- Desktop menu -->
+    <div class="collapse navbar-collapse d-none d-lg-flex justify-content-between" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Shop</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">All Products</a></li>
+            <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+            <li><a class="dropdown-item" href="#">Men</a></li>
+            <li><a class="dropdown-item" href="#">Women</a></li>
+            <li><a class="dropdown-item" href="#">Sale</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+      </ul>
+
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">❤️ Wishlist</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">🛒 Cart</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">🔐 Sign In</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Offcanvas (Mobile Menu) -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Shop</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">All Products</a></li>
+          <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+          <li><a class="dropdown-item" href="#">Men</a></li>
+          <li><a class="dropdown-item" href="#">Women</a></li>
+          <li><a class="dropdown-item" href="#">Sale</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">❤️ Wishlist</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">🛒 Cart</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">🔐 Sign In</a></li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+<-------_------------My navbar--2------------------------->
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Sidebar base */
+    .sidebar {
+      height: 100vh;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+      box-shadow: 4px 0 12px rgba(0, 123, 255, 0.3); /* Blue shadow */
+      z-index: 1040;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* Hide sidebar on mobile by default */
+    .sidebar.collapsed {
+      transform: translateX(-100%);
+    }
+
+    .sidebar .nav-link {
+      padding: 1rem;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .sidebar .nav-link:hover {
+      background-color: #f0f8ff;
+    }
+
+    /* Main content */
+    .content {
+      margin-left: 250px;
+      padding: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        margin-left: 0;
+      }
+    }
+
+    /* Toggle button for mobile */
+    .toggle-btn {
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      z-index: 1050;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Toggle button for mobile -->
+  <button class="toggle-btn d-lg-none" onclick="toggleSidebar()">☰ Menu</button>
+
+  <!-- Sidebar -->
+  <nav class="sidebar" id="adminSidebar">
+    <ul class="nav flex-column mt-4">
+      <li class="nav-item">
+        <a class="nav-link" href="#">📦 Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">🛒 Orders</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">👥 Customers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">📊 Reports</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">📁 Inventory</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">⚙️ Settings</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
+  <div class="content">
+    <h1>Welcome to Admin Dashboard</h1>
+    <p>Manage your shop, products, orders and more from here.</p>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('adminSidebar');
+      sidebar.classList.toggle('collapsed');
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+<-------_------------My navbar--3------------------------->
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .dashboard-card {
+      border-radius: 12px;
+      padding: 1.5rem;
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 123, 255, 0.1);
+      transition: all 0.2s ease;
+    }
+
+    .dashboard-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(0, 123, 255, 0.15);
+    }
+
+    .dashboard-icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .dashboard-label {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .dashboard-count {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container py-5">
+  <h2 class="mb-4">Welcome to Admin Dashboard</h2>
+
+  <div class="row g-4">
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="dashboard-card text-center">
+        <div class="dashboard-icon">📦</div>
+        <div class="dashboard-label">Products</div>
+        <div class="dashboard-count">120 Items</div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="dashboard-card text-center">
+        <div class="dashboard-icon">🛒</div>
+        <div class="dashboard-label">Orders</div>
+        <div class="dashboard-count">32 Pending</div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="dashboard-card text-center">
+        <div class="dashboard-icon">👥</div>
+        <div class="dashboard-label">Customers</div>
+        <div class="dashboard-count">528 Total</div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="dashboard-card text-center">
+        <div class="dashboard-icon">📊</div>
+        <div class="dashboard-label">Reports</div>
+        <div class="dashboard-count">Weekly Summary</div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="dashboard-card text-center">
+        <div class="dashboard-icon">📁</div>
+        <div class="dashboard-label">Inventory</div>
+        <div class="dashboard-count">Low Stock: 8</div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="dashboard-card text-center">
+        <div class="dashboard-icon">⚙️</div>
+        <div class="dashboard-label">Settings</div>
+        <div class="dashboard-count">Updated</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
+    <-------_------------My navbar--4 but extra not needed------------------------->
+
