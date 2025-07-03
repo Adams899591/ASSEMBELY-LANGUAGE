@@ -2263,3 +2263,121 @@ var  typed = new Typed( ".text", {
 
 
 <======================No results foumd===================>
+
+    =====about======
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Evo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+    }
+
+    .about-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      color: orange;
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+    }
+
+    /* Scrolling Text Section */
+    .scroll-text-wrapper {
+      height: 320px;
+      overflow: hidden;
+      position: relative;
+      border-top: 3px solid orange;
+      border-bottom: 3px solid orange;
+      padding: 10px 0;
+    }
+
+    .scroll-text {
+      position: absolute;
+      width: 100%;
+      animation: scroll-up 40s linear infinite;
+    }
+
+    @keyframes scroll-up {
+      0% { top: 100%; }
+      100% { top: -500%; }
+    }
+
+    .scroll-text p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+
+    .developer-credit {
+      margin-top: 2rem;
+      font-size: 1rem;
+      font-style: italic;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .scroll-text-wrapper {
+        height: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="about-container">
+    <h1>About Us</h1>
+
+    <div class="scroll-text-wrapper">
+      <div class="scroll-text">
+        <!-- Duplicated Content for Smooth Scroll -->
+        <div class="scroll-block">
+          <p>Welcome to <strong>Evo</strong>, your ultimate online destination for premium products at unbeatable prices. At Evo, we believe shopping should be effortless, enjoyable, and empowering — and we’re here to make that happen.</p>
+
+          <p>Founded with a passion for quality and convenience, Evo was created to offer a wide selection of products — from fashion and electronics to lifestyle and essentials — all in one place. Our mission is to connect people with the things they love, quickly and reliably.</p>
+
+          <p>We pride ourselves on our user-friendly platform, secure payment gateways, and responsive customer support. With a team dedicated to innovation and customer satisfaction, Evo is more than a store — it’s a shopping experience.</p>
+
+          <p>Whether you're searching for the latest trends or daily essentials, Evo has something for you. We're constantly updating our catalog to bring you the best the market has to offer.</p>
+
+          <p><strong>Our Vision:</strong> To redefine e-commerce in Africa by delivering excellence, accessibility, and trust through every click.</p>
+
+          <p><strong>Our Mission:</strong> To simplify online shopping while building a community of happy, confident customers.</p>
+
+          <p>— The Evo Team 🧡</p>
+
+          <!-- Developer Credit -->
+          <p class="developer-credit">This site was proudly developed by <strong>Your Name or Team</strong>.<br>
+          For inquiries or partnership, contact: <strong>yourname@example.com</strong></p>
+
+          <!-- Repeat the content for smooth scroll -->
+          <br><br>
+
+          <p>Welcome to <strong>Evo</strong>, your ultimate online destination for premium products at unbeatable prices...</p>
+          <p>Founded with a passion for quality and convenience, Evo was created...</p>
+          <p>We pride ourselves on our user-friendly platform...</p>
+          <p>Whether you're searching for the latest trends or daily essentials...</p>
+          <p><strong>Our Vision:</strong> To redefine e-commerce in Africa...</p>
+          <p><strong>Our Mission:</strong> To simplify online shopping...</p>
+          <p class="developer-credit">This site was proudly developed by <strong>Your Name</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
