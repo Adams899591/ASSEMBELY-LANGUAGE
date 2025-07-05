@@ -4336,6 +4336,101 @@ background-color: #fff;
 
 
 
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OLE Clothes Section</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    .text-orange {
+      color: orange;
+    }
+
+    .btn-orange {
+      background-color: orange;
+      color: white;
+    }
+
+    .btn-orange:hover {
+      background-color: darkorange;
+    }
+
+    .border-orange {
+      border-color: orange !important;
+    }
+
+    .ole-section {
+      background-color: white;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-weight: bold;
+      color: orange;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .section-title::before,
+    .section-title::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 25%;
+      height: 2px;
+      background-color: orange;
+    }
+
+    .section-title::before {
+      left: 0;
+    }
+
+    .section-title::after {
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- OLE Clothes Section -->
+<section class="container my-5">
+  <h2 class="section-title">OLE Clothes</h2>
+
+  <div class="row align-items-center ole-section">
+    
+    <!-- Image Column (right on desktop, top on mobile) -->
+    <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0 text-center">
+      <img src="https://via.placeholder.com/400x400?text=OLE+Clothes" alt="OLE Clothes" class="img-fluid rounded border border-orange">
+    </div>
+
+    <!-- Text Column -->
+    <div class="col-md-6 order-2 order-md-1">
+      <h4 class="text-orange fw-semibold">Quality and Stylish Clothing</h4>
+      <p>
+        OLE Clothes is your go-to collection for trendy, durable, and affordable fashion. Whether you're dressing for casual events, corporate settings, or weekend vibes, our clothes are tailored to match your style. Browse through our quality selection and experience comfort like never before.
+      </p>
+      <a href="#" class="btn btn-orange mt-3">Explore More</a>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
 
 
 
